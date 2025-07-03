@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <body>
     <header class="header" id="top">
       <div class="container header-navigation-direction">
@@ -56,6 +57,61 @@
             <li class="contact-item">
               <a class="contact-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+        <button class="menu-toggle" type="button" aria-label="Open mobile menu">
+          <svg class="menu-toggle-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <button class="menu-close" type="button" aria-label="Close mobile menu">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li><a href="./index.html" class="mobile-menu-link">Studio</a></li>
+            <li><a href="" class="mobile-menu-link">Portfolio</a></li>
+            <li><a href="" class="mobile-menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="mobile-contacts">
+          <ul>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-socials">
+            <li>
+              <a href=""
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -137,7 +193,9 @@
           <ul class="team-list">
             <li class="team-images">
               <img
-                src="./images/mark.jpg"
+                class="team-list-item-img"
+                srcset="./images/mark@x2.jpg 2x, ./images/mark@x1.jpg 1x"
+                src="./images/mark@x1.jpg"
                 alt="mark"
                 width="264"
                 height="260"
@@ -179,7 +237,14 @@
             </li>
 
             <li class="team-images">
-              <img src="./images/tom.jpg" alt="tom" width="264" height="260" />
+              <img
+                class="team-list-item-img"
+                srcset="./images/tom@x2.jpg 2x, ./images/tom@x1.jpg 1x"
+                src="./images/tom@x1.jpg"
+                alt="tom"
+                width="264"
+                height="260"
+              />
               <div class="team-list-item-desc">
                 <h3 class="team-second-text">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -218,7 +283,9 @@
 
             <li class="team-images">
               <img
-                src="./images/camila.jpg"
+                class="team-list-item-img"
+                srcset="./images/camila@x2.jpg 2x, ./images/camila@x1.jpg 1x"
+                src="./images/camila@x1.jpg"
                 alt="camila"
                 width="264"
                 height="260"
@@ -261,7 +328,9 @@
 
             <li class="team-images">
               <img
-                src="./images/daniel.jpg"
+                class="team-list-item-img"
+                srcset="./images/daniel@x2.jpg 2x, ./images/daniel@x1.jpg 1x"
+                src="./images/daniel@x1.jpg"
                 alt="daniel"
                 width="264"
                 height="260"
@@ -312,7 +381,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/log.jpg"
+                  srcset="./images/log@x2.jpg x2, ./images/log@x1.jpg x1"
+                  src="./images/log@x1.jpg"
                   alt="banking"
                   width="360"
                   height="300"
@@ -331,7 +401,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/code.jpg"
+                  srcset="./images/code@x2.jpg x2, ./images/code@x1.jpg x1"
+                  src="./images/code@x1.jpg"
                   alt="cashless"
                   width="360"
                   height="300"
@@ -350,7 +421,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/laptop.jpg"
+                  srcset="./images/laptop@x2.jpg x2, ./images/laptop@x1.jpg x1"
+                  src="./images/laptop@x1.jpg"
                   alt="laptop"
                   width="360"
                   height="300"
@@ -369,7 +441,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/car.jpg"
+                  srcset="./images/car@x2.jpg x2, ./images/car@x1.jpg x1"
+                  src="./images/car@x1.jpg"
                   alt="taxi"
                   width="360"
                   height="300"
@@ -388,7 +461,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/moon.jpg"
+                  srcset="./images/moon@x2.jpg x2, ./images/moon@x1.jpg x1"
+                  src="./images/moon@x1.jpg"
                   alt="screen"
                   width="360"
                   height="300"
@@ -407,7 +481,8 @@
             <li class="portfolio-images-line">
               <div class="portfolio-images">
                 <img
-                  src="./images/girl.jpg"
+                  srcset="./images/girl@x2.jpg x2, ./images/girl@x1.jpg x1"
+                  src="./images/girl@x1.jpg"
                   alt="girl"
                   width="360"
                   height="300"
