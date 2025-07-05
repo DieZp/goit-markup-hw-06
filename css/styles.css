@@ -179,6 +179,8 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    position: relative;
+        display: block;
 }
 
 .link:hover,
