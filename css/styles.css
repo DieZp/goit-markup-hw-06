@@ -13,7 +13,15 @@
     max-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
-    /* box-sizing: content-box; */
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-ocean: #404bbf;
+    --color-iris: #4d5ae5;
+    --color-slate: #434455;
+    --color-grey: #2e2f42;
+    --color-cloud: #f4f4fd;
 }
 
 h1,
@@ -34,7 +42,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+input,
+textarea,
+button {
+    font: inherit;
+}
 .is-hidden-js {
     transform: scale(0.3);
     position: absolute;
@@ -117,6 +129,7 @@ body {
 .header-navigation-direction {
     display: flex;
     align-items: center;
+    padding: 0 16px;
 }
 
 .header-navigation {
@@ -147,9 +160,9 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
-    margin-right: 76px;
+    color: rgb(77, 90, 229);
     display: inline-block;
+    padding: 0 16px;
 }
 
 .header-navigation-logo-italic {
@@ -164,7 +177,7 @@ body {
 
 .link.current::after {
     content: "";
-    position: absolute;
+    display: block;
     left: 0;
     bottom: -1px;
     height: 4px;
@@ -180,7 +193,8 @@ body {
     color: #2e2f42;
     padding: 24px 0;
     position: relative;
-        display: block;
+     display: block;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -195,10 +209,6 @@ body {
 .header-navigation-link:hover,
 .header-navigation-link:focus {
     color: #404bbf;
-}
-
-address {
-    font-style: normal;
 }
 
 .contact-list {
@@ -280,7 +290,7 @@ address {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/herotel@x1.jpg);
-    max-width: 320px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -510,8 +520,8 @@ address {
 .team-list {
     display: flex;
     flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 72px;
 }
 @media screen and (min-width: 768px) {
@@ -550,6 +560,9 @@ address {
 @media screen and (min-width: 768px) {
     .team-images{
         width: calc((100% - 24px) / 2);
+    .team-contacts-icon { gap: 24px;
+    ;}
+
     }
 }
 
@@ -643,7 +656,6 @@ address {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
 .portfolio-images-list {
     display: flex;
     flex-wrap: wrap;
@@ -1267,12 +1279,15 @@ address {
     line-height: 0;
     background-color: transparent;
     border: none;
-    margin-left: auto;
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-menu__open-icon {
     fill: var(--color-grey);
-}
+    }
 
 .mobile-menu__container {
     position: fixed;
@@ -1342,7 +1357,7 @@ address {
     margin-bottom: 40px;
 }
 
-.mobile-menu-link {
+.mobile-menu__nav {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -1351,16 +1366,16 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
+.mobile-menu__nav:hover,
+.mobile-menu__nav:focus {
     color: var(--color-ocean);
 }
 
-.mobile-menu-link.current {
+.mobile-menu__nav.current {
     color: var(--color-ocean);
 }
 
-.mobile-contacts {
+.mobile-menu__contacts {
     margin-top: auto;
     margin-bottom: 40px;
 }
@@ -1434,4 +1449,3 @@ address {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     border: 1px solid transparent; }
-
