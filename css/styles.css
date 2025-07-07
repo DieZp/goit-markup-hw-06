@@ -1006,7 +1006,7 @@ body {
 /* Menu overlay styles end */
 
 
-}/* Tablet styles start */
+/* Tablet styles start */
 @media (min-width: 768px) {
     .container {
         max-width: 768px;
