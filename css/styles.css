@@ -686,7 +686,7 @@ body {
 
 .overlay-icons {
     position: absolute;
-    padding-left: 16px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -841,13 +841,18 @@ body {
 
 /* Стилі спану-квадратика */
 /* Стан checked */
-.overlay-checkbox-input:checked+.overlay-checkbox-label .overlay-checkbox-span .overlay-checkbox-icon {
+.overlay-checkbox-input:checked+.overlay-checkbox-label .overlay-checkbox-span  {
     background-color: #404bbf;
     /* наприклад var(--accent-color) */
     border: none;
     fill: #F4F4FD;
     /* наприклад var(--light-color) */
 }
+.overlay-checkbox-icon:hover,
+.overlay-checkbox-icon:focus {
+    fill: #F4F4FD;
+}
+
 
 /* Скрываем нативный checkbox */
 .overlay-checkbox-input.visually-hidden {
@@ -855,7 +860,6 @@ body {
     opacity: 1;
     pointer-events: none;
 }
-
 /* Скрываем иконку галочки по умолчанию */
 .overlay-checkbox-icon {
     fill: rgba(0, 0, 0, 0);
