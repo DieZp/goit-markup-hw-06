@@ -29,11 +29,7 @@
           <a class="header-navigation-logo" href="./index.html"
             >Web<span class="header-navigation-logo-italic">Studio</span>
           </a>
-          <button
-            type="button"
-            class="menu-btn js-open-menu"
-            aria-expanded="false"
-          >
+          <button type="button" class="menu-btn" data-menu-open>
             <svg class="menu-btn-img" width="24" height="24">
               <use href="./images/symbol-defs.svg#mobile-menu-open"></use>
             </svg>
@@ -537,8 +533,8 @@
     </footer>
 
     <!-------------------------------------------------Menu overlay-------------------------------------------------------------->
-    <div class="menu js-menu-container">
-      <button type="button" class="modal-btn-close js-close-menu">
+    <div class="menu" data-menu>
+      <button type="button" class="modal-btn-close" data-menu-close>
         <svg class="modal-btn-close-img" width="8" height="8">
           <use href="./images/symbol-defs.svg#mobile-menu-close"></use>
         </svg>
@@ -554,7 +550,7 @@
             <a class="menu-nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="menu-nav-item">
-            <a class="menu-nav-link" href="">Contacts</a>
+            <a class="menu-nav-link" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -579,28 +575,28 @@
         <!--Social media -->
         <ul class="menu-social-list">
           <li class="menu-social-item">
-            <a class="menu-social-link" href="">
+            <a class="menu-social-link" href="#">
               <svg class="menu-social-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="menu-social-item">
-            <a class="menu-social-link" href="">
+            <a class="menu-social-link" href="#">
               <svg class="menu-social-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="menu-social-item">
-            <a class="menu-social-link" href="">
+            <a class="menu-social-link" href="#">
               <svg class="menu-social-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="menu-social-item">
-            <a class="menu-social-link" href="">
+            <a class="menu-social-link" href="#">
               <svg class="menu-social-icon" width="24" height="24">
                 <use href="./images/icons.svgicon-linkedin"></use>
               </svg>
@@ -707,8 +703,8 @@
         </form>
       </div>
     </div>
-    <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
