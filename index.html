@@ -29,7 +29,11 @@
           <a class="header-navigation-logo" href="./index.html"
             >Web<span class="header-navigation-logo-italic">Studio</span>
           </a>
-          <button type="button" class="menu-btn">
+          <button
+            type="button"
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+          >
             <svg class="menu-btn-img" width="24" height="24">
               <use href="./images/symbol-defs.svg#mobile-menu-open"></use>
             </svg>
@@ -71,7 +75,7 @@
           <h1 class="hero-banner-main-text">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-banner-button" type="button">
+          <button class="hero-banner-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -533,8 +537,8 @@
     </footer>
 
     <!-------------------------------------------------Menu overlay-------------------------------------------------------------->
-    <div class="menu">
-      <button type="button" class="modal-btn-close">
+    <div class="menu js-menu-container">
+      <button type="button" class="modal-btn-close js-close-menu">
         <svg class="modal-btn-close-img" width="8" height="8">
           <use href="./images/symbol-defs.svg#mobile-menu-close"></use>
         </svg>
@@ -607,9 +611,9 @@
     </div>
     <!-------------------------------------------------Menu overla-End --------------------------------------------------------->
     <!-------------------------------------------------Modal-overlay-------------------------------------------------------------->
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open" data-modal>
       <div class="modal">
-        <button class="form-button-close" type="button">
+        <button class="form-button-close" type="button" data-modal-close>
           <svg class="form-button-close-icon" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -703,5 +707,8 @@
         </form>
       </div>
     </div>
+    <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
