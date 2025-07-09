@@ -848,11 +848,6 @@ body {
     fill: #F4F4FD;
     /* наприклад var(--light-color) */
 }
-.overlay-checkbox-icon:hover,
-.overlay-checkbox-icon:focus {
-    fill: #F4F4FD;
-}
-
 
 /* Скрываем нативный checkbox */
 .overlay-checkbox-input.visually-hidden {
@@ -860,13 +855,8 @@ body {
     opacity: 1;
     pointer-events: none;
 }
-/* Скрываем иконку галочки по умолчанию */
-.overlay-checkbox-icon {
-    fill: rgba(0, 0, 0, 0);
-    /* повністю прозорий */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* цвет галочки */
-}/* < !------------------------------------------------------ModalOverlay-End-------------------------------------------------> */
+
+/* < !------------------------------------------------------ModalOverlay-End-------------------------------------------------> */
 
 /* -------------------------------------------------------- Mobile Menu-------------------------------------------------------- */
 /* Menu overlay styles start */
