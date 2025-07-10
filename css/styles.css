@@ -895,7 +895,7 @@ body {
     justify-content: flex-end;
 }
 
-.form-button-close{
+.modal-btn-close {
     display: block;
     position: absolute;
     top: 24px;
@@ -914,22 +914,21 @@ body {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-button-close:hover,
-.form-button-close:focus {
+.modal-btn-close:hover,
+.modal-btn-close:focus {
     border: none;
     background-color: #404bbf;
 }
 
-.form-button-close-icon {
+.modal-btn-close-img {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-button-close:hover .form-button-close-icon,
-.form-button-close:focus .form-button-close-icon {
+.modal-btn-close:hover .modal-btn-close-img,
+.modal-btn-close:focus .modal-btn-close-img {
     fill: #ffffff;
 }
-
 .menu-nav-list {
     display: flex;
     flex-direction: column;
